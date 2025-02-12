@@ -8,7 +8,7 @@
     "start": "node app.js",
     "test": "mocha app-test.js --timeout 10000 --reporter mocha-junit-reporter --exit",
     "coverage": "nyc --reporter cobertura --reporter lcov --reporter text --reporter json-summary mocha app-test.js --timeout 10000 --exit",
-    "build": "your-build-command"
+    "build": "mkdir -p build && cp -r index.html images build/"
   },
   "nyc": {
     "check-coverage": true,
